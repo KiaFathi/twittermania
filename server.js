@@ -4,6 +4,15 @@ var http = require('http').Server(app);
 var port = process.env.port || 3000;
 var io = require('socket.io')(http);
 
+var keys;
+if(!process.env.keys){
+  keys = require('./keys.js');
+} else {
+  keys = process.env.keys;
+}
+
+console.log(keys);
+
 app.get('/', function(req, res){
   res.sendfile('index.html');
 });
