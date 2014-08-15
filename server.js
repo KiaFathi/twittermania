@@ -5,7 +5,7 @@ var port = process.env.port || 3000;
 var io = require('socket.io')(http);
 
 var keys;
-if(!process.env.keys){
+if(!process.env.port){
   keys = require('./keys.js');
 }
 
