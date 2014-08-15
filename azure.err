@@ -1,0 +1,10 @@
+Thu Aug 14 2014 21:44:29 GMT-0700 (PDT):
+{ [Error: Missing character "="]
+  stack: [Getter/Setter],
+  __frame: undefined,
+  rawStack: [Getter] }
+Error: Missing character "="
+    at ConnectionStringParser._parse (/usr/local/lib/node_modules/azure-cli/node_modules/azure-common/lib/services/connectionstringparser.js:86:11)
+    at Object.exports.parse (/usr/local/lib/node_modules/azure-cli/node_modules/azure-common/lib/services/connectionstringparser.js:219:33)
+    at siteAppsettings_addCommand__2 (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/site.appsetting._js:71:41)
+

@@ -34,16 +34,6 @@
   setInterval(function(){
     var tweet = '';
     var target = $('#messages')
-    var targetChildren = target[0].childNodes;
-    for(var i = 0; i < targetChildren.length; i++){
-      var msg = targetChildren[i].textContent;
-      tweet += ' ' + msg;
-    }
-    tweet = tweet.trim();
-    tweet = tweet.slice(0, 140);
-    if(tweet.length > 0){
-      console.log(tweet);
-    }
     target.empty();
   }, 5000);
 </script>
