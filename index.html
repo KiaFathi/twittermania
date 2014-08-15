@@ -14,6 +14,8 @@
   </style>
 </head>
 <body>
+  <h1>Messages NodefyBot will Tweet!</h1>
+  <a href='http://twitter.com/nodefyBot'>Visit nodefyBot</a>
   <p id="messages"></p>
   <form action="">
     <input id="m" autocomplete="off" /><button>Send</button>
@@ -31,11 +33,11 @@
     $('#messages').append($('<li>').text(msg));
   });
 
-  setInterval(function(){
-    var tweet = '';
-    var target = $('#messages')
-    target.empty();
-  }, 5000);
+setInterval(function(){
+  var target = $('#messages')
+  target.empty();
+}, 30000);
+
 </script>
 
 </body>
